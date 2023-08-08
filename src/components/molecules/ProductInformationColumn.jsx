@@ -10,8 +10,8 @@ const ProductInformationColumn = ({ product }) => {
   return (
     <Box className="w-[512px] m-4">
       <Photo
-        className="rounded-lg"
-        ssrc={staticServerUrl + `/images/${id}.jpg`}
+        className="card"
+        src={staticServerUrl + `/images/${id}.jpg`}
         alt={productName}
       />
     </Box>
