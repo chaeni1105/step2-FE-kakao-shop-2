@@ -8,7 +8,7 @@ const staticServerUrl = process.env.REACT_APP_PATH || "";
 const ProductInformationColumn = ({ product }) => {
   const { productName, id } = product;
   return (
-    <Box className="w-[512px] m-4">
+    <Box className="w-[1024px] m-4">
       <Photo
         className="card"
         src={staticServerUrl + `/images/${id}.jpg`}
