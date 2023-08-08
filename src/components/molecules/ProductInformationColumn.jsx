@@ -3,13 +3,15 @@ import { comma } from "../../utils/convert"; // eslint-disable-line no-unused-va
 import Photo from "../atoms/Photo";
 import Box from "../atoms/Box";
 
+const staticServerUrl = process.env.REACT_APP_PATH || "";
+
 const ProductInformationColumn = ({ product }) => {
-  const { productName } = product;
+  const { productName, id } = product;
   return (
     <Box className="w-[512px] m-4">
       <Photo
         className="rounded-lg"
-        src={product.image}
+        ssrc={staticServerUrl + `/images/${id}.jpg`}
         alt={productName}
       />
     </Box>

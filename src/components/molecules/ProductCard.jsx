@@ -3,6 +3,8 @@ import Card from "../atoms/Card";
 import Photo from "../atoms/Photo";
 import ProductCardSkeleton from "../skeletons/ProductCardSkeleton";
 
+const staticServerUrl = process.env.REACT_APP_PATH || "";
+
 const ProductCard = ({ product, loading }) => {
   return (
     <>
@@ -12,7 +14,7 @@ const ProductCard = ({ product, loading }) => {
         <Card to={`/product/${product.id}`}>
           <Photo 
             className="rounded-lg"
-            src={product.image} 
+            src={staticServerUrl + `/images/${product.id}.jpg`} 
             alt={product.productName} />
           <div className="product-name">{product.productName}</div>
           <div className="product-price">{comma(product.price)}원</div>
