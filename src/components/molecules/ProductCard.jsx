@@ -13,7 +13,7 @@ const ProductCard = ({ product, loading }) => {
       ) : (
         <Card to={`/product/${product.id}`}>
           <Photo 
-            className="rounded-lg"
+            className="card"
             src={staticServerUrl + `/images/${product.id}.jpg`} 
             alt={product.productName} />
           <div className="product-name">{product.productName}</div>

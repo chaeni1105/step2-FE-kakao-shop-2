@@ -8,7 +8,7 @@ export const instance = axios.create({
   baseURL: staticServerUrl + "/api",
   timeout: 1000, // 보다 나은 사용자 경험을 위해 timeout 추가
   headers: {
-    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Type": "application/json; charset=UTF-8",
   },
 });
 
