@@ -1,0 +1,5 @@
+.card {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    object-fit: cover; /* Scale the image to cover the entire container */
+  }
